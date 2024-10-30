@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sidebar img.title-img {
+    width: 100px;          /* Adjust width to desired size */
+    height: auto;          /* Maintains aspect ratio */
+    border-radius: 50%;    /* Makes the image circular */
+    margin-bottom: 15px;   /* Space below the image */
+}
+
+.sidebar h2 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar nav a:hover {
+    background-color: #575757;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Button Styling */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar nav a {
+        float: left;
+        padding: 8px;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
